@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5AEFE42-8DB7-4387-85E9-C481AED87C73}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CNPM10_Laptop</RootNamespace>
+    <AssemblyName>CNPM10_Laptop</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForm\DoanhThu_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\DoanhThu_Admin.Designer.cs">
+      <DependentUpon>DoanhThu_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\HoTroKH_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\HoTroKH_Admin.Designer.cs">
+      <DependentUpon>HoTroKH_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\MainForm_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\MainForm_Admin.Designer.cs">
+      <DependentUpon>MainForm_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\QLTK_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\QLTK_Admin.Designer.cs">
+      <DependentUpon>QLTK_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\QuanLyGioHang_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\QuanLyGioHang_Admin.Designer.cs">
+      <DependentUpon>QuanLyGioHang_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\QuanLyKho_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\QuanLyKho_Admin.Designer.cs">
+      <DependentUpon>QuanLyKho_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\SanPham_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\SanPham_Admin.Designer.cs">
+      <DependentUpon>SanPham_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\ThemDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\ThemDonNhap.Designer.cs">
+      <DependentUpon>ThemDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForm\TrangChu_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForm\TrangChu_Admin.Designer.cs">
+      <DependentUpon>TrangChu_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLLayers\BLAccountLogin.cs" />
+    <Compile Include="BLLayers\BLAdmin.cs" />
+    <Compile Include="BLLayers\BLAdminAccMana.cs" />
+    <Compile Include="BLLayers\BLChat.cs" />
+    <Compile Include="BLLayers\BLChatUser.cs" />
+    <Compile Include="BLLayers\BLChiTiet.cs" />
+    <Compile Include="BLLayers\BLDoanhThu.cs" />
+    <Compile Include="BLLayers\BLGioHang.cs" />
+    <Compile Include="BLLayers\BLGioHangAD.cs" />
+    <Compile Include="BLLayers\BLKho.cs" />
+    <Compile Include="BLLayers\BLSanPham.cs" />
+    <Compile Include="BLLayers\BLTaiKhoan.cs" />
+    <Compile Include="BLLayers\BLUser.cs" />
+    <Compile Include="BLLayers\BLVanChuyen.cs" />
+    <Compile Include="ConnectDB.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\ChangePassword_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\ChangePassword_User.Designer.cs">
+      <DependentUpon>ChangePassword_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\ChiTietSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\ChiTietSP.Designer.cs">
+      <DependentUpon>ChiTietSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\CTHD_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\CTHD_User.Designer.cs">
+      <DependentUpon>CTHD_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\GioHang_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\GioHang_User.Designer.cs">
+      <DependentUpon>GioHang_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\MainForm_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\MainForm_User.Designer.cs">
+      <DependentUpon>MainForm_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\sp_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\sp_user.Designer.cs">
+      <DependentUpon>sp_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\TaiKhoan_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\TaiKhoan_User.Designer.cs">
+      <DependentUpon>TaiKhoan_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\ThanhToan_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\ThanhToan_User.Designer.cs">
+      <DependentUpon>ThanhToan_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\TrangChu_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\TrangChu_User.Designer.cs">
+      <DependentUpon>TrangChu_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\TroGiup_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\TroGiup_User.Designer.cs">
+      <DependentUpon>TroGiup_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForm\VanChuyen_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm\VanChuyen_User.Designer.cs">
+      <DependentUpon>VanChuyen_User.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForm\DoanhThu_Admin.resx">
+      <DependentUpon>DoanhThu_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\HoTroKH_Admin.resx">
+      <DependentUpon>HoTroKH_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\MainForm_Admin.resx">
+      <DependentUpon>MainForm_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\QLTK_Admin.resx">
+      <DependentUpon>QLTK_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\QuanLyGioHang_Admin.resx">
+      <DependentUpon>QuanLyGioHang_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\QuanLyKho_Admin.resx">
+      <DependentUpon>QuanLyKho_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\SanPham_Admin.resx">
+      <DependentUpon>SanPham_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\ThemDonNhap.resx">
+      <DependentUpon>ThemDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForm\TrangChu_Admin.resx">
+      <DependentUpon>TrangChu_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\ChangePassword_User.resx">
+      <DependentUpon>ChangePassword_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\ChiTietSP.resx">
+      <DependentUpon>ChiTietSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\CTHD_User.resx">
+      <DependentUpon>CTHD_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\GioHang_User.resx">
+      <DependentUpon>GioHang_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\MainForm_User.resx">
+      <DependentUpon>MainForm_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\sp_user.resx">
+      <DependentUpon>sp_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\TaiKhoan_User.resx">
+      <DependentUpon>TaiKhoan_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\ThanhToan_User.resx">
+      <DependentUpon>ThanhToan_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\TrangChu_User.resx">
+      <DependentUpon>TrangChu_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\TroGiup_User.resx">
+      <DependentUpon>TroGiup_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm\VanChuyen_User.resx">
+      <DependentUpon>VanChuyen_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
